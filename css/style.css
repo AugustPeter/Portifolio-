@@ -4,11 +4,13 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 .container{
-    background-color: #212529;
     width: 100%;
-    height: 100%;
-    position: fixed;
+    height: max-content;
+    position: absolute;
+    background-color: #212529;
+
 }
 .profile{
     background-image: url(https://wallpapercave.com/wp/wp5016204.jpg);
@@ -42,6 +44,66 @@
     font-weight: 200;
     font-size: .9em;
 }
+
+.contact{
+    display: flex;
+    margin-top: 1em;
+    align-items: center;
+    gap: 1.5em ;
+}
+.contact span{
+    font-family: 'poppins';
+    color: #d2d3d5;
+    font-size: .9em;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background-color: transparent;
+    padding: 10px 14px 10px 14px;
+    border: 2px #d2d3d5 solid;
+    border-radius: 5px;
+}
+i.fa-github, i.fa-linkedin-in{
+    font-size: 1.7em;
+}
+.skills{
+    width: 80%;
+    height: 20vh;
+    background-color: #212529;
+    outline: 2px solid #1b1d20;
+    outline-offset: 0px;
+    left: 50%;
+    right: 50%;
+    position: absolute;
+    padding: 3em;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+i.fa-html5{
+    font-size: 7em;
+    color: white;
+}
 .content {
-    margin-top: 100vh;
+    margin-top: 9.5em;
+}
+.content h1{
+    text-align: center;
+    font-family: 'poppins';
+    font-weight: 500;
+    font-size: 1.8em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #dcddde;
+    position: relative;
+}
+.content h1:after{
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid #61624a;
+    width: 11%;
+    right: 39.6%;
+    top: 0;
+    bottom: 0px;
 }
