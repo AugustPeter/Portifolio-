@@ -87,8 +87,12 @@ i.fa-html5{
 }
 .content {
     margin-top: 9.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
-.content h1{
+.content.h1 h1{
     text-align: center;
     font-family: 'poppins';
     font-weight: 500;
@@ -98,12 +102,88 @@ i.fa-html5{
     color: #dcddde;
     position: relative;
 }
-.content h1:after{
+.content.h1 h1:after{
     content: "";
     position: absolute;
     border-bottom: 2px solid #61624a;
-    width: 11%;
-    right: 39.6%;
+    width: 53%;
+    right: 0%;
     top: 0;
     bottom: 0px;
+}
+
+.card{
+    width: 85%;
+    height: 55vh;
+    background-color: transparent;
+    margin-top: 1.5em;
+    margin-bottom: 1.6em;
+    display: flex;
+    position: relative;
+    padding: 2em;
+    /* flex-direction: row; */
+    gap: 6em;
+}
+.card:nth-child(odd){
+    flex-direction: row-reverse;
+}
+.board{
+    border-radius: 7px;
+    width: 60%;
+    height: 100%;
+    background-image: url(../image.png);
+    background-position: center;
+    background-size: cover;
+    aspect-ratio: 16 / 9;
+}
+.info{
+    width: 100%;
+    height: 60%;
+    align-self: flex-end;
+    
+}
+.info h2{
+    font-weight: 400;
+    font-size: 1.6em;
+    /* line-height: 1.9em; */
+    font-family: 'poppins';
+    letter-spacing: 1px;
+    color: #d2d3d5;
+}
+.info p{
+    font-weight: 300;
+    font-size: .9em;
+    /* line-height: 1.9em; */
+    font-family: 'poppins';
+    letter-spacing: 1px;
+    color: #d2d3d5;
+}
+.buttons{
+    display: flex;
+    margin-top: 1.5em;
+    gap: 1em;
+}
+.buttons > *{
+    font-family: 'poppins';
+    color: #d2d3d5;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: .6em 1.7em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.buttons > :first-child{
+    background-color: #64644b;
+    border: none;
+}
+.buttons > :last-child{
+    background-color: transparent;
+    border: 1px solid #d2d3d5;
+    display: flex;
+    gap: .2em;
+    align-items: center;
+}
+i.fa-github{
+    font-size: 1em;
 }
