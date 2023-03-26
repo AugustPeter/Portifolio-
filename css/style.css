@@ -127,6 +127,9 @@ i.fa-html5{
 .card:nth-child(odd){
     flex-direction: row-reverse;
 }
+.card:last-child{
+    margin-bottom: 5em;
+}
 .board{
     border-radius: 7px;
     width: 60%;
@@ -139,7 +142,7 @@ i.fa-html5{
 .info{
     width: 100%;
     height: 60%;
-    align-self: flex-end;
+    align-self: center;
     
 }
 .info h2{
@@ -186,4 +189,222 @@ i.fa-html5{
 }
 i.fa-github{
     font-size: 1em;
+}
+.form-email{
+    width: 100%;
+    height: 85vh;
+    background-color: #1f1f1a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3em;
+}
+.form-email h1{
+    text-align: center;
+    font-family: 'poppins';
+    font-weight: 500;
+    font-size: 1.8em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #dcddde;
+    position: relative;
+    margin-top: 1.3em;
+    margin-bottom: 1em;
+}
+.form-email h1:after{
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid #61624a;
+    width: 50%;
+    right: 0%;
+    top: 0;
+    bottom: 0px;
+    /* transform: translate(50%); */
+}
+.form{
+    width: 44%;
+    height: 96%;
+    border-radius: .4em;
+    border: .1em solid #61624a;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* position: relative; */
+}
+.form label{
+    font-family: 'poppins';
+    color: #dcddde;
+    font-size: .9em;
+    font-weight: 300;
+    margin-bottom: .3em;
+    display: inline-block;
+}
+.form input{
+    width: 100%;
+    height: 3em;
+    outline: none;
+    background-color: #141411;
+    border: none;
+    border-bottom: .1em solid #61624a;
+    color: #dcddde;
+    padding: .5em;
+    font-family: 'poppins';
+    margin-bottom: 1em;
+}
+.message{
+    /* height: 100%; */
+    padding: .5em;
+    width: 100%;
+    flex-grow: 1;
+    outline: none;
+    font-family: 'poppins';
+    color: #dcddde;
+    background-color: #141411;
+    border: none;
+    border-bottom: .1em solid #61624a;
+}
+.form button{
+    align-self: center;
+    padding: 10px 25px 10px 25px;
+    font-family: 'poppins';
+    color: #dcddde;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 4px;
+    background-color: #61624a;
+    margin-top: 3em;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1366px) {
+    .about {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .profile{
+        height: 35vh;
+    }
+    .skills{
+        padding: 1em;
+        height: fit-content;
+    }
+    .info {
+        width: 100%;
+        height: 40%;
+    }
+    .form{
+        width: 80%;
+        height: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .profile{
+        height: 40vh;
+    }
+    .about {
+        width: 100%;
+    }
+    .content.h1 h1 {
+        font-size: 1.5em;
+    }
+    .skills{
+        padding: 2.5em 1em;
+        width: 98%;
+        height: fit-content;
+    }
+    .card{
+        gap: 1.5em;
+        margin-top: 1rem;
+        padding: 1em;
+        
+    }
+    .buttons > *{
+        padding: .4em 1.3em;
+    }
+    .form{
+        width: 80%;
+    }   
+}
+
+@media screen and (max-width: 576px) {
+    .profile{
+        height: 50vh;
+    }
+    .skills{
+        height: fit-content;
+        padding: 1em;
+    }
+    .buttons {
+        flex-direction: column;
+        gap: 1em;
+    }
+    .buttons > * {
+        width: 80%;
+        text-align: center;
+        align-self: center;
+    }
+    .board{
+        border-radius: 7px;
+        width: 60%;
+        height: 60%;
+        background-image: url(../image.png);
+        background-position: center;
+        background-size: cover;
+        aspect-ratio: 16 / 9;
+    }
+    .info{
+        width: 50%;
+        height: 60%;
+        align-self: flex-start;
+        
+    }
+    .card{
+        height: fit-content;
+    }
+    .form{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .profile{
+        height: 40vh;
+    }
+    .skills{
+        padding: 0;
+        height: max-content;
+    }
+    .card,.card:nth-child(odd){
+        flex-direction: column;
+    }
+    .board{
+        width: 80%;
+        align-self: center;
+    }
+    .info{
+        align-self: center;
+        text-align: center;
+        width: 60%;
+    }
+    .buttons {
+        flex-direction: row;
+        gap: 1em;
+        
+    }
+    .buttons > * {
+        font-size: 1em;
+        width: 80%;
+        text-align: center;
+        align-self: center;
+    }
+    .form{
+        width: 80%;
+        height: 60%;
+    }
 }
